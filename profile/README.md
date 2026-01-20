@@ -1,12 +1,34 @@
-## Hi there 👋
+# SoftSoftware2
 
-<!--
+Bienvenido a SoftSoftware2. Somos una pequeña empresa especializada en el desarrollo de software y soluciones tecnológicas a medida, formada por un equipo reducido y muy comprometido.
 
-**Here are some ideas to get you started:**
+## Quiénes somos
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Somos un equipo de tres profesionales con experiencia en desarrollo, consultoría y soporte técnico. Nuestro enfoque es ofrecer soluciones prácticas y adaptadas a las necesidades de cada cliente.
+
+**Equipo:**
+
+- Jordi Arnau
+- Iker Vericat
+- Francesc Quintó
+
+## Ubicación
+
+Estamos ubicados en amposa, en el carrer Madrid, número 49.
+
+## Servicios
+
+- Desarrollo de software a medida
+- Consultoría tecnológica
+- Mantenimiento y soporte
+
+Si tienes un proyecto o una idea que quieras transformar en producto, estaremos encantados de escuchar y colaborar.
+
+## Contacto
+
+Por favor indícanos cómo prefieres que te contactemos (email, teléfono o web) y actualizaremos esta sección con los datos.
+
+---
+
+Gracias por visitar nuestro perfil. Si quieres que añadamos más secciones (proyectos, clientes, tarifas), dímelo y lo incorporo.
+
