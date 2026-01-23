@@ -1,36 +1,31 @@
-# Documentació Tècnica – Previ al Desenvolupament
+# Documentació Tècnica – Prèvia al Desenvolupament
 
 ## 1. Introducció
 
 ### 1.1 Propòsit del document
-Descriu l'objectiu d'aquest document i la seva utilitat dins del projecte.
-
-> Exemple:  
-> Aquest document defineix l'anàlisi i el disseny tècnic de l'aplicació abans d'iniciar el seu desenvolupament.
+Aquest document defineix l'anàlisi i el disseny tècnic de l'aplicació abans d'iniciar el desenvolupament. Serveix com a guia, però no és del tot rígida.
 
 ---
 
 ### 1.2 Abast del projecte
-Defineix quines funcionalitats estan incloses i quines queden fora del projecte.
-
-> Exemple:  
-> L'aplicació permetrà gestionar tasques personals.  
-> No inclourà integració amb serveis externs.
+Aquest projecte està enfocat a desenvolupar una aplicació web multi-tenant, on les empreses contractants podran tenir la gestió de la seva flota de vehicles.
 
 ---
 
 ## 2. Descripció general de l'aplicació
 
 ### 2.1 Objectiu de l'aplicació
-Explica quin problema resol l'aplicació.
+L'aplicació té un objectiu clar per al client: permetre gestionar la seva flota de vehicles, millorar-ne el control i obtenir beneficis mitjançant serveis d'ús compartit de vehicles (car sharing). A més, ofereix un sistema de ticketing B2C (business-to-consumer) per a la comunicació amb els clients.
 
 ---
 
-### 2.2 Usuaris del sistema
-Llista els tipus d'usuaris o rols.
+### 2.2 Rols d'usuari
+Rols principals de l'aplicació:
 
-- Usuari
-- Administrador
+- **Superusuari** (`super_user`): gestiona les estadístiques globals de totes les empreses i administra recursos i serveis globals, p. ex. bases de dades, comptes d'administrador, integracions d'API (mapes) i subdominis.
+- **Administrador d'empresa** (`company_admin`): gestiona l'empresa a la qual està assignat; té accés només a les estadístiques de la seva empresa. A la secció de vehicles pot consultar, crear, actualitzar i eliminar vehicles. Gestiona el sistema de ticketing amb els clients i l'administració d'usuaris de la seva empresa.
+- **Treballador** (`worker`): gestiona els tickets amb els clients i pot consultar i actualitzar la informació dels vehicles.
+- **Client** (`customer`): pot llogar un vehicle i crear tickets per sol·licitar ajuda o suport.
 
 ---
 
