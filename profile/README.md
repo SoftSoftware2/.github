@@ -1,37 +1,41 @@
 # SoftSoftware2
 
-Bienvenido a SoftSoftware2. Somos una pequeña empresa especializada en el desarrollo de software y soluciones tecnológicas a medida, formada por un equipo reducido y muy comprometido.
+Benvingut a SoftSoftware2. Som una petita empresa especialitzada en el desenvolupament de programari i solucions tecnològiques a mida, formada per un equip reduït i molt compromès.
 
-## Trabajando en:
-[SIMS](SIMS.md)
+## Informació rellevant
 
-## Quiénes somos
+- **Treballant en**: [SIMS](SIMS.md)
+- **Convencions de codi** : [CodingConventions](CodingConventions.md)
 
-Somos un equipo de tres profesionales con experiencia en desarrollo, consultoría y soporte técnico. Nuestro enfoque es ofrecer soluciones prácticas y adaptadas a las necesidades de cada cliente.
+## Qui som?
 
-**Equipo:**
+Som un equip de tres professionals amb experiència en desenvolupament, consultoria i suport tècnic. El nostre enfocament és oferir solucions pràctiques i adaptades a les necessitats de cada client.
+
+**Equip:**
 
 - Jordi Arnau
 - Iker Vericat
 - Francesc Quintó
 
-## Ubicación
 
-Estamos ubicados en amposa, en el carrer Madrid, número 49.
 
-## Servicios
+## Ubicació
 
-- Desarrollo de software a medida
-- Consultoría tecnológica
-- Mantenimiento y soporte
+Estem ubicats a Amposta, al carrer Madrid, número 49.
 
-Si tienes un proyecto o una idea que quieras transformar en producto, estaremos encantados de escuchar y colaborar.
+## Serveis
 
-## Contacto
+- Desenvolupament de programari a mida
+- Consultoria tecnològica
+- Manteniment i suport
 
-Por favor indícanos cómo prefieres que te contactemos (email, teléfono o web) y actualizaremos esta sección con los datos.
+Si tens un projecte o una idea que vulguis transformar en producte, estarem encantats d'escoltar-te i col·laborar.
+
+## Contacte
+
+Si us plau, indica'ns com prefereixes que et contactem (correu electrònic, telèfon o web) i actualitzarem aquesta secció amb les dades.
 
 ---
 
-Gracias por visitar nuestro perfil. Si quieres que añadamos más secciones (proyectos, clientes, tarifas), dímelo y lo incorporo.
+Gràcies per visitar el nostre perfil. 
 
