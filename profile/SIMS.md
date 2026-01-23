@@ -1,19 +1,3 @@
-# Documentación Técnica – Previa al Desarrollo
-
-## 1. Introducción
-
-### 1.1 Propósito del documento
-Describe el objetivo de este documento y su utilidad dentro del proyecto.
-
-> Ejemplo:  
-> Este documento define el análisis y diseño técnico de la aplicación antes de iniciar su desarrollo.
-
----
-
-### 1.2 Alcance del proyecto
-Define qué funcionalidades están incluidas y cuáles quedan fuera del proyecto.
-
-```markdown
 # Documentació Tècnica – Previ al Desenvolupament
 
 ## 1. Introducció
