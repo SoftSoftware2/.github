@@ -1,41 +1,40 @@
 # SoftSoftware2
 
-Benvingut a SoftSoftware2. Som una petita empresa especialitzada en el desenvolupament de programari i solucions tecnològiques a mida, formada per un equip reduït i molt compromès.
+Welcome to SoftSoftware2. We are a small company specialized in custom software development and technological solutions, formed by a small and highly committed team.
 
-## Informació rellevant
+## Relevant Information
 
-- **Treballant en**: [SIMS](SIMS.md)
-- **Convencions de codi** : [CodingConventions](CodingConventions.md)
+- **Working on**: [SIMS](SIMS.md)
+- **Coding conventions**: [CodingConventions](CodingConventions.md)
 
-## Qui som?
+## Who are we?
 
-Som un equip de tres professionals amb experiència en desenvolupament, consultoria i suport tècnic. El nostre enfocament és oferir solucions pràctiques i adaptades a les necessitats de cada client.
+We are a team of three professionals with experience in development, consulting, and technical support. Our approach is to offer practical solutions tailored to each client's needs.
 
-**Equip:**
+**Team:**
 
 - Jordi Arnau
 - Iker Vericat
 - Francesc Quintó
 
 
+## Location
 
-## Ubicació
+We are located in Amposta, at Madrid street, number 49.
 
-Estem ubicats a Amposta, al carrer Madrid, número 49.
+## Services
 
-## Serveis
+- Custom software development
+- Technological consulting
+- Maintenance and support
 
-- Desenvolupament de programari a mida
-- Consultoria tecnològica
-- Manteniment i suport
+If you have a project or an idea you want to turn into a product, we will be happy to listen and collaborate.
 
-Si tens un projecte o una idea que vulguis transformar en producte, estarem encantats d'escoltar-te i col·laborar.
+## Contact
 
-## Contacte
-
-Si us plau, indica'ns com prefereixes que et contactem (correu electrònic, telèfon o web) i actualitzarem aquesta secció amb les dades.
+Please let us know how you prefer to be contacted (email, phone, or web) and we will update this section with the details.
 
 ---
 
-Gràcies per visitar el nostre perfil. 
+Thank you for visiting our profile.
 
