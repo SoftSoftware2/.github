@@ -57,11 +57,37 @@ Funcionalitats que el sistema ha de complir.
 
 ### 4.1 Cas d'ús: [Nom del cas d'ús]
 
-| Camp | Descripció |
-|------|-------|
-| Actor | Usuari |
-| Flux principal | |
-| Resultat | |
+-------------------------------+
+| Administrador / Usuari gestor |
+|          de flota             |
++-------------------------------+
+       |
+       |
+       v
++-----------------+
+| Gestió Vehicles |
++-----------------+
+| - Afegir        |
+| - Editar        |
+| - Eliminar      |
+| - Consultar     |
++-----------------+
+       |
+       |
+       v
++-----------------+
+| Resultat        |
++-----------------+
+| - Vehicle creat |
+| - Vehicle       |
+|   actualitzat   |
+| - Vehicle       |
+|   eliminat      |
+| - Llista de     |
+|   vehicles      |
+|   mostrada      |
++-----------------+
+
 
 ---
 
