@@ -233,7 +233,7 @@ Explica com es comuniquen el frontend i el backend.
 ## 7. Model de dades
 
 
-### 7.1 Entitats de la base de dades
+### 7.1 Entitats de la base de dades "Main"
 
 A continuació es mostren les taules principals amb els camps, tipus i restriccions.
 
@@ -245,9 +245,9 @@ A continuació es mostren les taules principals amb els camps, tipus i restricci
 | email | varchar(70) | not null, unique |
 | pwd | text | not null |
 | name | varchar(50) | not null |
-| created_at | datetime | not null |
-| updated_at | datetime |  |
-| deleted_at | datetime |  |
+| created_at | timestamp | not null |
+| updated_at | timestamp |  |
+| deleted_at | timestamp |  |
 
 #### Taula `companies`
 
@@ -261,9 +261,9 @@ A continuació es mostren les taules principals amb els camps, tipus i restricci
 | db_conexion | varchar(255) | not null |
 | db_user | varchar(255) | not null |
 | db_pwd | text | not null |
-| created_at | datetime | not null |
-| updated_at | datetime |  |
-| deleted_at | datetime |  |
+| created_at | timestamp | not null |
+| updated_at | timestamp |  |
+| deleted_at | timestamp |  |
 
 **Notes:**
 - Els camps marcats com a "xifrats" (db_conexion, db_user, db_pwd) han d'emmagatzemar-se en forma segura (p. ex. xifrat a la base de dades o gestionats per un sistema de secrets).
@@ -272,6 +272,134 @@ A continuació es mostren les taules principals amb els camps, tipus i restricci
 
 
 ---
+
+### 7.2 Entitats de la base de dades "Tenant"
+
+A continuació es documenten les taules específiques del tenant (esquema multi-tenant) amb camps, tipus i restriccions.
+
+#### Taula `users`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| email | varchar(70) | unique, not null |
+| password | text | not null |
+| role_id | int | not null |
+| name | varchar(50) | not null |
+| surname | varchar(50) |  |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+#### Taula `roles`
+
+#### Taula `roles`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| name | varchar(50) | not null, unique |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+#### Taula `permissions`
+
+#### Taula `permissions`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| name | varchar(50) | not null, unique |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+
+#### Taula `roles_permissions`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| role_id | int | not null |
+| permission_id | int | not null |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+Nota: es recomana una PK composta `(role_id, permission_id)` per garantir unicitat.
+
+#### Taula `vehicle_types`
+
+#### Taula `vehicle_types`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| name | varchar(50) | not null, unique |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+
+#### Taula `vehicles`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| license | varchar(15) | not null, unique |
+| status | enum | values: `available`, `using`, `stopped` |
+| vehicle_type | int | not null |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+#### Taula `payment_forms`
+
+#### Taula `payment_forms`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| name | varchar(50) | not null |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+
+#### Taula `rentals`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| user_id | int | not null |
+| vehicle_id | int | not null |
+| payment_form_id | int | not null |
+| exit_point | varchar(255) | not null |
+| drop_off_point | varchar(255) | not null |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+
+#### Taula `tickets`
+
+| Camp | Tipus | Restriccions |
+|------|-------|--------------|
+| id | int | PK, not null, autoincrement |
+| created_by | int | not null |
+| assigned_id | int |  |
+| vehicle_id | int | not null |
+| status | enum | values: `solved`, `open`, `in_progress` |
+| created_at | timestamp | not null |
+| updated_at | timestamp | not null |
+| deleted_at | timestamp |  |
+
+---
+
+**Observacions:**
+- Es recomana declarar índexs per `email`, `license` i `cif` en les taules corresponents.
+- Per enums (`status`), assegurar la definició en la migració/BD i gestionament d'estats en backend.
+- Afegir mecanismes d'auditoria (created_by/updated_by) si es requereix traçabilitat detallada.
 
 ## 8. Seguretat
 
