@@ -55,9 +55,9 @@ Funcionalitats que el sistema ha de complir.
 
 ## 4. Casos d'ús
 
-### 4.1 Cas d'ús: [Nom del cas d'ús]
+### 4.1 Cas d'ús: Gestió de vehicles
 
-                         +-------------------------------+
+                      +-------------------------------+
                       | Administrador / Usuari gestor |
                       |          de flota             |
                       +-------------------------------+
@@ -87,6 +87,91 @@ Funcionalitats que el sistema ha de complir.
                            |   vehicles      |
                            |   mostrada      |
                            +-----------------+
+
+### 4.2 Cas d'ús: Gestió d’usuaris
+                      +----------------------+
+                      |   Administrador      |
+                      +----------------------+
+                               |
+                               |
+                               v
+                         +-----------------+
+                         | Gestió Usuaris  |
+                         +-----------------+
+                         | - Crear usuari  |
+                         | - Editar usuari |
+                         | - Eliminar usuari|
+                         | - Consultar llista|
+                         +-----------------+
+                               |
+                               |
+                               v
+                         +------------------------+
+                         | Resultat               |
+                         +------------------------+
+                         | - Usuari registrat     |
+                         | - Usuari modificat     |
+                         | - Usuari eliminat      |
+                         | - Llista d’usuaris     |
+                         |   actualitzada         |
+                         +------------------------+
+
+### 4.3 Cas d'ús: Gestió de reserves
+                      +-------------------------+
+                      |    Usuari / Ciutadà     |
+                      +-------------------------+
+                               |
+                               |
+                               v
+                         +-------------------+
+                         | Gestió Reserves   |
+                         +-------------------+
+                         | - Consultar       |
+                         |   vehicles        |
+                         |   disponibles     |
+                         | - Reservar vehicle|
+                         | - Cancel·lar      |
+                         |   reserva         |
+                         +-------------------+
+                               |
+                               |
+                               v
+                         +---------------------------+
+                         | Resultat                  |
+                         +---------------------------+
+                         | - Reserva confirmada      |
+                         | - Reserva cancel·lada     |
+                         | - Llista d’events actual.|
+                         +---------------------------+
+
+### 4.4 Cas d'ús: Visualització de dades IoT
+                      +---------------------------+
+                      | Administrador / Analista  |
+                      +---------------------------+
+                               |
+                               |
+                               v
+                         +-------------------+
+                         | Visualització     |
+                         | Dades IoT         |
+                         +-------------------+
+                         | - Veure GPS       |
+                         | - Veure bateria   |
+                         | - Veure estat     |
+                         |   vehicle         |
+                         | - Alertes sensors |
+                         +-------------------+
+                               |
+                               |
+                               v
+                         +---------------------------+
+                         | Resultat                  |
+                         +---------------------------+
+                         | - Dashboard actualitzat   |
+                         | - Informació en temps real|
+                         | - Tots els vehicles       |
+                         |   mostrats correctament  |
+                         +---------------------------+
 
 
 ---
