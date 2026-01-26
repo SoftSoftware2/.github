@@ -208,17 +208,68 @@ Funcionalitats que el sistema ha de complir.
 ## 5. Arquitectura del sistema
 
 ### 5.1 Tipus d'arquitectura
-Descriu l'arquitectura utilitzada.
 
-> Exemple:  
-> Arquitectura client-servidor basada en API REST.
+L'aplicació seguirà una arquitectura client‑servidor amb comunicació via API REST. Per facilitar escalabilitat i mantenibilitat s'adoptarà un enfoc modular tant al frontend com al backend.
+
+- Frontend: aplicació SPA amb components reutilitzables i mòduls per domini (Vue 3 + TypeScript).
+- Backend: arquitectura modular basada en MVC adaptada a mòduls (MMVC), on cada mòdul encapsula models, controllers, serveis, rutes i migrations.
+
+Exemple d'estructura modular per al frontend (Vue 3 + Vite):
+
+```
+src/
+├─ assets/
+├─ modules/           # mòduls de domini (fleet/, rentals/, tickets/)
+│  ├─ exemple/
+│  │  ├─ components/
+│  │  ├─ composable/    
+│  │  ├─ views/
+│  │  ├─ routes/
+│  │  ├─ interfaces/
+│  │  └─ store/
+│  └─ tickets/
+├─ router/
+├─ store/             # pinia / vuex global
+├─ services/          # serveis HTTP i integracions (api.ts, payments.ts)
+├─ plugins/
+└─ main.ts
+```
+
+Exemple d'estructura modular MMVC per a Laravel:
+
+```
+app/
+├─ Modules/
+│  ├─ Fleet/
+│  │  ├─ Controllers/
+│  │  ├─ Models/
+│  │  ├─ Services/
+│  │  ├─ Migrations/
+│  │  └─ Routes/
+│  └─ Tickets/
+├─ Http/
+│  └─ Controllers/      # controllers genèrics
+├─ Providers/           # registrar mòduls i serveis
+└─ Console/
+
+routes/
+└─ api.php
+```
+
+Notes per al backend:
+- Cada mòdul registra les seves rutes i migration, utilitzarem Service i Providers per inicialitzar mòduls.
 
 ---
 
 ### 5.2 Comunicació entre components
-Explica com es comuniquen el frontend i el backend.
 
----
+La comunicació entre frontend i backend es farà principalment via API REST amb JSON. Principals consideracions:
+
+- Autenticació: Tokens CSRF.
+- Versionat d'API: usar `/api/v1/...` per compatibilitat.
+- Errors: respostes amb codi HTTP, codi intern i missatge amigable.
+- Temps real: WebSockets o serveis pub/sub per telemetria i notificacions en temps real si cal.
+
 
 ## 6. Tecnologies utilitzades
 
@@ -403,29 +454,36 @@ Nota: es recomana una PK composta `(role_id, permission_id)` per garantir unicit
 
 ## 8. Seguretat
 
-Descriu les mesures bàsiques de seguretat implementades.
+La seguretat és una prioritat en totes les capes de l'aplicació: autenticació, autorització, dades, infraestructura i processos. A continuació es recullen les mesures i bones pràctiques recomanades.
 
-- Autenticació d'usuaris
-- Validació de dades
-- Control d'accés per rols
-- Implemntació de test, per a front/back.
+- **Autenticació**
+        - Emmagatzemar contrasenyes amb un algorisme fort (bcrypt, Argon2) i salts únics.
+        - Gestionar sessions amb tokens.
+
+- **Autorització i control d'accés**
+        - Implementar RBAC (roles) i verificacions a nivell de servei i de dades.
+        - Aplicar principi de mínims privilegis.
+
+- **Validació i sanejament**
+        - Validar totes les dades d'entrada (servidor i client) i utilitzar consultes parametritzades/ORM per evitar injeccions SQL.
+        - Codificar la sortida (output encoding) per evitar XSS.
+
+- **Proteccions HTTP i headers segurs**
+        - Implementar CSRF tokens per operacions que modifiquin estat.
+
+
+- **Proves i revisió contínua**
+        - Integrar test d'integracó en la pipeline CI.
 
 
 ---
 
-## 9. Planificació del desenvolupament
+## 9. Conclusió
+Aquest document serveix com a guia inicial per poder desenvolupar a cap l'applicació. Aqui es recullen els requisits minims inicials (poden variar durant el temps). També aquest document, permeteix que noves persones es sumen a treballar amb el projectes, sense anar a ulls cecs. 
 
-| Fase | Descripció |
-|-----|------------|
-| Anàlisi | |
-| Desenvolupament frontend | |
-| Desenvolupament backend | |
-| Proves | |
-
----
-
-## 10. Conclusió
-
-Resum final del document i la seva utilitat durant el desenvolupament del projecte.
-
+Per a mantenir el projecte, s'han de seguir els següents pasos:
+- **Priotizar els requisists**
+- **Mantenir el model de dades** (sempre que es pugue).
+- **Coordinar el desplegament**
+- **Mantindre coherencia amb les codeconventions** [CodingCoventions](CodingConventions.md)
 ```
