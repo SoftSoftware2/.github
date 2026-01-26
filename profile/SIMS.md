@@ -95,14 +95,14 @@ Funcionalitats que el sistema ha de complir.
                                |
                                |
                                v
-                       +-------------------+
-                       | Gestió Usuaris    |
-                       +-------------------+
-                       | - Crear usuari    |
-                       | - Editar usuari   |
-                       | - Eliminar usuari |
-                       | - Consultar llista|
-                       +-------------------+
+                       +--------------------+
+                       | Gestió Usuaris     |
+                       +--------------------+
+                       | - Crear usuari     |
+                       | - Editar usuari    |
+                       | - Eliminar usuari  |
+                       | - Consultar llista |
+                       +--------------------+
                                |
                                |
                                v
@@ -123,16 +123,16 @@ Funcionalitats que el sistema ha de complir.
                                |
                                |
                                v
-                       +-------------------+
-                       | Gestió Reserves   |
-                       +-------------------+
-                       | - Consultar       |
-                       |   vehicles        |
-                       |   disponibles     |
-                       | - Reservar vehicle|
-                       | - Cancel·lar      |
-                       |   reserva         |
-                       +-------------------+
+                       +--------------------+
+                       | Gestió Reserves    |
+                       +--------------------+
+                       | - Consultar        |
+                       |   vehicles         |
+                       |   disponibles      |
+                       | - Reservar vehicle |
+                       | - Cancel·lar       |
+                       |   reserva          |
+                       +--------------------+
                                  |
                                  |
                                  v
@@ -141,7 +141,7 @@ Funcionalitats que el sistema ha de complir.
                        +---------------------------+
                        | - Reserva confirmada      |
                        | - Reserva cancel·lada     |
-                       | - Llista d’events actual.|
+                       | - Llista d’events actual. |
                        +---------------------------+
 
 ### 4.4 Cas d'ús: Visualització de dades IoT
@@ -170,7 +170,7 @@ Funcionalitats que el sistema ha de complir.
                          | - Dashboard actualitzat   |
                          | - Informació en temps real|
                          | - Tots els vehicles       |
-                         |   mostrats correctament  |
+                         |   mostrats correctament   |
                          +---------------------------+
 
 
