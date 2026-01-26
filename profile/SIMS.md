@@ -95,26 +95,26 @@ Funcionalitats que el sistema ha de complir.
                                |
                                |
                                v
-                         +-----------------+
-                         | Gestió Usuaris  |
-                         +-----------------+
-                         | - Crear usuari  |
-                         | - Editar usuari |
-                         | - Eliminar usuari|
-                         | - Consultar llista|
-                         +-----------------+
+                       +-------------------+
+                       | Gestió Usuaris    |
+                       +-------------------+
+                       | - Crear usuari    |
+                       | - Editar usuari   |
+                       | - Eliminar usuari |
+                       | - Consultar llista|
+                       +-------------------+
                                |
                                |
                                v
-                         +------------------------+
-                         | Resultat               |
-                         +------------------------+
-                         | - Usuari registrat     |
-                         | - Usuari modificat     |
-                         | - Usuari eliminat      |
-                         | - Llista d’usuaris     |
-                         |   actualitzada         |
-                         +------------------------+
+                       +------------------------+
+                       | Resultat               |
+                       +------------------------+
+                       | - Usuari registrat     |
+                       | - Usuari modificat     |
+                       | - Usuari eliminat      |
+                       | - Llista d’usuaris     |
+                       |   actualitzada         |
+                       +------------------------+
 
 ### 4.3 Cas d'ús: Gestió de reserves
                       +-------------------------+
@@ -123,34 +123,34 @@ Funcionalitats que el sistema ha de complir.
                                |
                                |
                                v
-                         +-------------------+
-                         | Gestió Reserves   |
-                         +-------------------+
-                         | - Consultar       |
-                         |   vehicles        |
-                         |   disponibles     |
-                         | - Reservar vehicle|
-                         | - Cancel·lar      |
-                         |   reserva         |
-                         +-------------------+
-                               |
-                               |
-                               v
-                         +---------------------------+
-                         | Resultat                  |
-                         +---------------------------+
-                         | - Reserva confirmada      |
-                         | - Reserva cancel·lada     |
-                         | - Llista d’events actual.|
-                         +---------------------------+
+                       +-------------------+
+                       | Gestió Reserves   |
+                       +-------------------+
+                       | - Consultar       |
+                       |   vehicles        |
+                       |   disponibles     |
+                       | - Reservar vehicle|
+                       | - Cancel·lar      |
+                       |   reserva         |
+                       +-------------------+
+                                 |
+                                 |
+                                 v
+                       +---------------------------+
+                       | Resultat                  |
+                       +---------------------------+
+                       | - Reserva confirmada      |
+                       | - Reserva cancel·lada     |
+                       | - Llista d’events actual.|
+                       +---------------------------+
 
 ### 4.4 Cas d'ús: Visualització de dades IoT
                       +---------------------------+
                       | Administrador / Analista  |
                       +---------------------------+
-                               |
-                               |
-                               v
+                                 |
+                                 |
+                                 v
                          +-------------------+
                          | Visualització     |
                          | Dades IoT         |
@@ -161,9 +161,9 @@ Funcionalitats que el sistema ha de complir.
                          |   vehicle         |
                          | - Alertes sensors |
                          +-------------------+
-                               |
-                               |
-                               v
+                                 |
+                                 |
+                                 v
                          +---------------------------+
                          | Resultat                  |
                          +---------------------------+
@@ -173,6 +173,35 @@ Funcionalitats que el sistema ha de complir.
                          |   mostrats correctament  |
                          +---------------------------+
 
+
+### 4.5 Cas d'ús: Gestió de tiquets
+                      +-------------------------------+
+                      | Usuari / Ciutadà / Admin      |
+                      +-------------------------------+
+                                 |
+                                 |
+                                 v
+                         +-------------------+
+                         | Gestió Tiquets    |
+                         +-------------------+
+                         | - Crear tiquet    |
+                         | - Consultar       |
+                         | - Assignar        |
+                         | - Resoldre        |
+                         | - Tancar tiquet   |
+                         +-------------------+
+                                 |
+                                 |
+                                 v
+                         +---------------------------+
+                         | Resultat                  |
+                         +---------------------------+
+                         | - Tiquet creat            |
+                         | - Tiquet actualitzat      |
+                         | - Tiquet resolt / tancat  |
+                         | - Llista de tiquets       |
+                         |   actualitzada            |
+                         +---------------------------+
 
 ---
 
