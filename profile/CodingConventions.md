@@ -40,6 +40,49 @@
     - Function: manage communication, process data, and validate users
 - Mandatory files (README, `.env.example`, etc.)
 
+## Folder Structure
+Example modular structure for the frontend (Vue 3 + Vite):
+
+```
+src/
+├─ assets/
+├─ modules/           # domain modules (fleet/, rentals/, tickets/)
+│  ├─ example/
+│  │  ├─ components/
+│  │  ├─ composable/
+│  │  ├─ views/
+│  │  ├─ routes/
+│  │  ├─ interfaces/
+│  │  └─ store/
+│  └─ tickets/
+├─ router/
+├─ store/             # pinia / vuex global
+├─ services/          # HTTP services and integrations (api.ts, payments.ts)
+├─ plugins/
+└─ main.ts
+```
+
+Example modular MMVC structure for backend (Laravel):
+
+```
+app/
+├─ Modules/
+│  ├─ Fleet/
+│  │  ├─ Controllers/
+│  │  ├─ Models/
+│  │  ├─ Services/
+│  │  ├─ Migrations/
+│  │  └─ routes.php
+│  └─ Tickets/
+├─ Http/
+│  └─ Controllers/      # generic controllers
+└─ Providers/           # register modules and services
+
+
+routes/
+└─ api.php
+```
+
 ---
 
 ## 4. Naming conventions
