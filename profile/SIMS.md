@@ -316,7 +316,8 @@ Below are the main tables with fields, types, and constraints.
 
 ### 7.2 Tenant database entities
 
-[BDD](https://dbdiagram.io/d/Fleetly2-0-6977b8ccbd82f5fce2a99d25)
+[BDD SIMS](https://dbdiagram.io/d/Fleetly_Main-696e57e5d6e030a0247b5b8a)
+[BDD Company](https://dbdiagram.io/d/Fleetly2-0-6977b8ccbd82f5fce2a99d25)
 
 Below are the tenant-specific tables (multi-tenant schema) with fields, types, and constraints.
 
