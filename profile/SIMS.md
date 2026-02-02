@@ -235,12 +235,12 @@ app/
 │  │  ├─ Models/
 │  │  ├─ Services/
 │  │  ├─ Migrations/
-│  │  └─ Routes/
+│  │  └─ routes.php
 │  └─ Tickets/
 ├─ Http/
 │  └─ Controllers/      # generic controllers
-├─ Providers/           # register modules and services
-└─ Console/
+└─ Providers/           # register modules and services
+
 
 routes/
 └─ api.php
@@ -315,6 +315,8 @@ Below are the main tables with fields, types, and constraints.
 ---
 
 ### 7.2 Tenant database entities
+
+[BDD](https://dbdiagram.io/d/Fleetly2-0-6977b8ccbd82f5fce2a99d25)
 
 Below are the tenant-specific tables (multi-tenant schema) with fields, types, and constraints.
 
