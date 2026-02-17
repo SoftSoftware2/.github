@@ -6,6 +6,7 @@ Welcome to SoftSoftware2. We are a small company specialized in custom software 
 
 - **Working on**: [SIMS](SIMS.md)
 - **Coding conventions**: [CodingConventions](CodingConventions.md)
+- **Links videos**: [VIDEOS](videoslink)
 
 ## Who are we?
 
