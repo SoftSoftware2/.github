@@ -5,3 +5,8 @@ Jordi:
 
 Iker
   https://youtu.be/v86AIcOiBMQ
+
+Francesc:
+  - **Ca**: https://www.youtube.com/watch?v=vkxSFL7qftQ
+  - **En**: https://www.youtube.com/watch?v=KzqcmZXOdiQ
+  - **Es**: https://www.youtube.com/watch?v=w2vet2CC9a0
